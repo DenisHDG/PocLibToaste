@@ -46,10 +46,9 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("maven") {
-                from (components["release"])
                 groupId = "com.github.DenisHDG"
                 artifactId = "poc_lib_toast"
-                version = "1.0.2"
+                version = "1.1"
             }
         }
     }
