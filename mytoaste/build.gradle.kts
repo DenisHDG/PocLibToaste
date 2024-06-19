@@ -45,10 +45,11 @@ dependencies {
 afterEvaluate {
     publishing {
         publications {
-            create<MavenPublication>("maven") {
-                groupId = "com.github.DenisHDG"
-                artifactId = "poc_lib_toast"
-                version = "1.1"
+            create<MavenPublication>("release") {
+                from(components["release"])
+//                groupId = "com.github.DenisHDG"
+//                artifactId = "poc_lib_toast"
+//                version = "1.1"
             }
         }
     }
